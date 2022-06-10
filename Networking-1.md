@@ -22,7 +22,7 @@
 - Switches comes with ports,firmware or OS.
 - Unmanaged switches: Simple switches with no or fewer configuration options. Generally used in homes and small businesses.
 - Managed switches: Manged switches gives more configuration options, grater security more features with greater control. In general managed switches comes with software so that most of the configurations can be done through software.Users can access switch through CLI or GUI based interfaces.
-![images/switch.jpeg](Switch)
+![Image](images/switch.jpeg)
   
 ##### l2 switch
 
