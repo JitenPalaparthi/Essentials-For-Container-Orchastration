@@ -31,7 +31,12 @@
 ##### cloud managed
 
 #### router
+
 - Routers are used to different netwroks to communicate.
-- Router routes data packets between computer networks
+- Router routes data packets between computer networks.
+- Routers work at the network layer (layer 3) of the Open Systems Interconnection (OSI) reference model for networking to move packets between networks using their logical addresses (which, in the case of TCP/IP, are the IP addresses of destination hosts on the network). 
+- Routers contain internal tables of information called routing tables that keep track of all known network addresses and possible paths throughout the internetwork, along with the cost of reaching each network.
+
+![Image](images/router.jpg)
 
 #### wireless access points
