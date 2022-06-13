@@ -26,9 +26,16 @@
   
 ##### l2 switch
 
+- A Layer 2 switch works with MAC addresses only and does not care about IP address or any items of higher layers
+
 ##### l3 switch
 
-##### cloud managed
+- Layer 3 switch, or multilayer switch, can do all the job of a layer 2 switch and additional static routing and dynamic routing as well. That means, a Layer 3 switch has both MAC address table and IP routing table, and handles intra-VLAN communication and packets routing between different VLANs. 
+- If you need the switch to aggregate multiple access switches and do inter-VLAN routing, then a Layer 3 switch is needed
+
+##### cloud managed networking
+
+- Enter cloud-managed networking solutions comprising of wireless access points, switches, security appliances, endpoint management, network insight, and security cameras – all managed through a dashboard.
 
 #### router
 
@@ -40,3 +47,60 @@
 ![Image](images/router.jpg)
 
 #### wireless access points
+
+- A wireless access point (WAP) is a hardware device or configured node on a local area network (LAN) that allows wireless capable devices and wired networks to connect through a wireless standard, including Wi-Fi or Bluetooth.
+- Wireless access points are connected to routners either through wire or through wireless.
+
+### Network Fundamentals
+
+#### Default Route
+
+#### Default Gateway
+
+#### DNS
+
+#### DNS Resolver
+
+#### Primary and Secondary DNS Servers
+
+#### DHCP
+
+- Dynamic Host Configuration Protocol is a network management protocol.
+- This is used to assign IP address to conneected devices
+- When a computer is connected to the network it needs an IP address for the communication.
+- DHCP automatically assigns IP address for a device as soon as it is connected to the network.For example the laptop in your house gets an ip address as soon as it establish connection to the wifi router.
+- In the above scenario , the router assigns an IP address to the computer as router runs DHCP server and computer has DHCP client.DHCP Server(in router) and DCHP Client(Computer) has client-server connection.
+- As soon as the devise(The computer that is connected to the netork) is out of netwrok then automatically IP address is de-assigned by the DHCP Server(in router).
+- The IP address of a each device is mapped to the mac address of that device in the router configuration.
+- We can assign our desired IP(adhering to the subnetting rules, that means in the same IP range) address to the device if that IP address is not already assigned to any other device then it can be set for that computer.
+- Based on MAC address of the computer IP address is mapped in the router. 
+
+#### IP Subnetting
+
+#### IP CIDR Notation
+
+#### Network Namespaces
+
+#### Network Interface
+
+#### Routing Table
+
+#### NAT(Network Address Translation)
+
+#### IPTables
+
+#### Loopback Interface
+
+#### Understanding 0.0.0.0
+
+#### Virtual Ethernet
+
+#### More on Virtual Networking
+
+#### Open vSwitch
+
+#### Bridge networking
+
+#### Setting up a network
+
+
