@@ -55,7 +55,15 @@
 
 #### Default Route
 
+### Route Table
+
 #### Default Gateway
+
+#### Internet Control Message Protocol (ICMP)
+
+#### MAC
+
+#### ARP
 
 #### DNS
 
@@ -75,7 +83,23 @@
 - We can assign our desired IP(adhering to the subnetting rules, that means in the same IP range) address to the device if that IP address is not already assigned to any other device then it can be set for that computer.
 - Based on MAC address of the computer IP address is mapped in the router. 
 
-#### IP Subnetting
+#### IPv4
+
+- Internet protocol is a 32 bit number split into four octets separated by a .(dot);
+- An IP address consists of network and host portion.
+
+#### Subnet
+
+- Subnetting is the technique for logically partitioning a single physical network into multiple smaller sub-networks or subnets.
+- Subnet is used to determine how many IP addresses are needed in a network.
+- Subnet mask splits the IP address into host and network address, by that it defines which part of the IP address belongs to the device and which part belongs to the network.
+- Subnet mask is not a IP address, it is used to mask.
+- In IPv4 , like any other IP address subnet mask is also a 32 bit number.
+- In that 32 bit number all host bits are 0 and network bits are 1s.
+- https://www.quora.com/How-do-I-know-if-these-IP-addresses-are-in-the-same-network-How-can-I-ping-an-IP-with-a-different-subnet-mask
+- 
+
+#### Understanding 0.0.0.0
 
 #### IP CIDR Notation
 
@@ -83,15 +107,11 @@
 
 #### Network Interface
 
-#### Routing Table
-
 #### NAT(Network Address Translation)
 
-#### IPTables
+#### IPtables
 
 #### Loopback Interface
-
-#### Understanding 0.0.0.0
 
 #### Virtual Ethernet
 
@@ -103,4 +123,6 @@
 
 #### Setting up a network
 
+### FAQS
 
+- Pinging systems from another network depends on the actual implementation of the network. If these two subnets are connected via a switch or a hub it can be difficult to find the system from another network but if its connected via a router it may forward packets from one subnet to another. If you can communicate to systems at different networks then all your physical connection of your network goes through a router. There is also another possiblity where for security purposes ping and port scanning functions are disable by the firewall either at the destination or at the router. If you can see other computers but no reply from ping requests then probably the firewall must be blocking the communication. This typically happens when you ping from a Linux based computer with a computer running windows because windows firewall blocks these type of ping and port scan requests.
