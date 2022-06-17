@@ -34,3 +34,5 @@
 
 - A wireless access point (WAP) is a hardware device or configured node on a local area network (LAN) that allows wireless capable devices and wired networks to connect through a wireless standard, including Wi-Fi or Bluetooth.
 - Wireless access points are connected to routners either through wire or through wireless.
+
+![Image](images/wap.jpg)
