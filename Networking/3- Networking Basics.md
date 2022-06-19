@@ -24,14 +24,35 @@
 
 - Subnetting is the technique for logically partitioning a single physical network into multiple smaller sub-networks or subnets.
 - Subnet is used to determine how many IP addresses are needed in a network.
+- There is no value for IP address without subnet
+  
+### Subnet mask
+
 - Subnet mask splits the IP address into host and network address, by that it defines which part of the IP address belongs to the device and which part belongs to the network.
 - Subnet mask is not a IP address, it is used to mask.
 - In IPv4 , like any other IP address subnet mask is also a 32 bit number.
 - In that 32 bit number all host bits are 0 and network bits are 1s.
-- https://www.quora.com/How-do-I-know-if-these-IP-addresses-are-in-the-same-network-How-can-I-ping-an-IP-with-a-different-subnet-mask
+- For masking lets use latest CIDR notation rather than legacy IP address classification(Ranges are identified based on classes; Those are A,B,C,D,E) as per below section.
+  
+#### CIDR (Classless Inter-Domain Routing)
 
+- System called Classless Inter-Domain Routing, or CIDR, was developed as an alternative to traditional subnetting. The idea is that you can add a specification in the IP address itself as to the number of significant bits that make up the routing or networking portion.Example 192.168.0.0/16
+  
+- Example 10.10.10.0/24
+  - From above 10.10.10 is the network address
+  - The last 8 bits are range from 0-255( 10.10.10.0 - 10.10.10.255) are host addresses.
+  - Netmask here is 255.255.255.0 (Netmask is not an IP address it is to let the network know that the combination or network + host addresses).
+  - Here is an excellent subnet mask bitwise visualalizer https://cidr.xyz/
+  
+  - ![Image](images/subnet-mask-calc-2.png)
+  
+  - ![Image](images/subnet-mask-calc-1.png)
+  - There are some special addresses from the range after Subnet Masking. Example 192.168.0.0/24 this can also be written as 192.168.0.0/255.255.255.0.
+  - **Address Range:** 192.168.0.0 - 192.168.0.255;Range of all IP address based on above CIDR notation.
+  - **Network Identifier:** 192.168.0.0;Network address is first address in the network and it is used for identification network segment. All the IP addresses, using the same network address part, are in the same network segment. Because network address is first address in the network, it can not be random IP address, but it must mach with network mask in a binary view, for last bits in the network address must be zeros, as long as mask has zeros.
+  - **Broadcast Address:** 192.168.0.255;Broadcast address is the last address in the network, and it is used for addressing all the nodes in the network at the same time
+ 
 ## DHCP
-
 - Dynamic Host Configuration Protocol is a network management protocol.
 - This is used to assign IP address to conneected devices
 - When a computer is connected to the network it needs an IP address for the communication.
@@ -61,3 +82,7 @@ To send the message, it also requires Computer 2's MAC address. First, Computer 
 - The below diagram depicts how MAC and IP address work together using ARP protocol
 
 ![Image](images/MAC-address-vs-IP-address.webp)
+
+### Video Recording link
+
+- [Networking basics](https://youtu.be/onF1mDteGV0)

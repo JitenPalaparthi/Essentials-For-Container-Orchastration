@@ -27,6 +27,7 @@
 - Router routes data packets between computer networks.
 - Routers work at the network layer (layer 3) of the Open Systems Interconnection (OSI) reference model for networking to move packets between networks using their logical addresses (which, in the case of TCP/IP, are the IP addresses of destination hosts on the network). 
 - Routers contain internal tables of information called routing tables that keep track of all known network addresses and possible paths throughout the internetwork, along with the cost of reaching each network.
+- Routers use microprocessors to make forwarding decisions
 
 ![Image](images/router.jpg)
 
@@ -36,3 +37,7 @@
 - Wireless access points are connected to routners either through wire or through wireless.
 
 ![Image](images/wap.jpg)
+
+### Video Recording link
+
+- [Networking devices](https://youtu.be/uMOm3U-gMMk)

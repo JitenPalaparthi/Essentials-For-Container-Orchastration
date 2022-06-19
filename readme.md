@@ -10,9 +10,16 @@
   - Using Wireshark (As it gives indepth knowledge about networking)
   - Firewals
   - Loadbalancers
+  - Software Defined Networking
+  - Open vSwitch
+- Storage
+  - Storage Virtualization
+    - Server based
+    - Fabric-based
+    - Storage array-based
+    - Block storage
 - Linux Internals.Namespaces that are used to run containers.
 - Internals of Docker | Containers
-- Storage
 - Security | Cryptography
 - Working with Public | Private Keys
   - crts, ca certs , cra etc
@@ -22,3 +29,6 @@
 - Nomad
   - Nomad essentials
   - Deploying applications using Nomad
+- Algorthms and Theorems
+  - Raft is a consensus algorithm
+  - CAP Theorem
