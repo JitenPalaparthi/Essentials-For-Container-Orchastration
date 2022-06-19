@@ -1,7 +1,4 @@
-
-## Networking
-
-### Network OSI Model
+# Network OSI Model
 
 - The Open Systems Interconnection model is a conceptual model that describes the universal standard of communication functions of a telecommunication system or computing system, without any regard to the system's underlying internal technology and specific protocol suites. 
 
