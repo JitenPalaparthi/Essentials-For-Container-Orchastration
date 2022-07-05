@@ -165,6 +165,18 @@ scope link: valid only on this device
 valid_lft forever: valid lifetime for IPv6 address
 preferred_lft forever: preferred lifetime for IPv6 address
 
+### To know all interfaces
+
+```ifconfig```
+
+RX Data: Number of received data in bytes
+Rx Packets: Number of received data in bytes
+RX Errors: Number of errors in receiving packets
+
+TX Data: Number of transmitted data in bytes
+TX Packets: Number of transmitted data in bytes
+TX Errors: Number of errors in transmitting packets
+
 ### Interface Statistics
 
 ```ip -s link show eth0```
@@ -172,3 +184,24 @@ preferred_lft forever: preferred lifetime for IPv6 address
 ### Routing Information
 
 ```ip route show```
+
+### To create a namespace
+
+```ip netns add blue```
+
+### To set mtu inside blue namespace
+
+```sudo ip netns exec blue ip link set dev lo mtu 1600```
+
+### To UP the loop back insid blue namespace
+
+```sudo ip netns exec blue ip link set dev lo up```
+
+### To know network stats
+
+```netstat -i```
+
+### To know network stats base on device
+
+```netstat -s```
+
