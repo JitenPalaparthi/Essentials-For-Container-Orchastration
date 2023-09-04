@@ -32,3 +32,17 @@
 - Algorthms and Theorems
   - Raft is a consensus algorithm
   - CAP Theorem
+
+  ## Video Links
+
+  - https://youtu.be/uMOm3U-gMMk?si=klTpjX__kpDG7rcI
+
+  ## Presentation about Containers
+
+  - https://docs.google.com/presentation/d/1wPcWfzFAsaMPJ-WfxAafegcXiqF5ZQjk2SxBxOW642w/edit?usp=sharing
+
+ ## Presentation about Kubernetes
+
+  - https://docs.google.com/presentation/d/1KWUX1cnm67mOEYtzM1NgR9JL79NCqRCC8cKWN7vHVHU/edit?usp=sharing
+
+  
